@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 200px;
+    background-color: blueviolet;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.block{
+    width: 160px;
+    height: 40px;
+    border-bottom: 5px solid black;
+    transform: rotate(-20deg);
+    position: relative;
+}
+.box {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    /* background-color: blue; */
+    animation: mar 4s linear infinite;
+    position: absolute;
+    margin-bottom: 5px;
+}
+
+@keyframes mar {
+    0% {
+        transform: rotate(0deg);
+        left: 0;
+
+    }
+    50%{
+        transform: rotate(360deg);
+        right: 0;
+        left: 120px;
+
+    }
+    100% {
+        left: 0;
+        transform: rotate(0deg);
+
+    }
+}
